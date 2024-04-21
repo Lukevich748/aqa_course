@@ -8,17 +8,25 @@ def get_max_number_in_list(numbers: list):
 
 
 def greeting(name):
-    return print(f"Hello {name}")
+    return f"Hello {name}!"
+
+
+greeting_result = greeting("Artem")
+print(greeting_result)
 
 
 # 2
 def get_movie_ticket(full_name: str, age: int, adult=False):
     if age >= 18:
-        print(f"{full_name}, Билет продан")
+        return f"{full_name}, Билет продан."
     elif adult:
-        print(f"{full_name}, Билет продан под присмотром взрослого")
+        return f"{full_name}, Билет продан под присмотром взрослого."
     else:
-        print(f"{full_name}, Нельзя продать билет")
+        return f"{full_name}, Нельзя продать билет."
+
+
+ticket_result = get_movie_ticket("Lukevich Artem", 17, True)
+print(ticket_result)
 
 
 # 3
